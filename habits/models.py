@@ -8,6 +8,7 @@ NULLABLE = {"blank": True, "null": True}
 
 
 class Habits(models.Model):
+    """Модель Привычки"""
 
     user = models.ForeignKey(
         AUTH_USER_MODEL, verbose_name="Пользователь", on_delete=models.CASCADE

@@ -10,6 +10,7 @@ from .validators import (
 
 
 class HabitsSerializer(serializers.ModelSerializer):
+    """Сериализатор для модели Привычки."""
     class Meta:
         model = Habits
         fields = '__all__'

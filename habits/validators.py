@@ -28,6 +28,7 @@ class TimeValidator:
 
 
 class PleasantHabitValidator:
+    """Проверят, что связанная привычка имеет признак приятной привычки."""
 
     def __init__(self, related_habit, pleasant_habit):
         self.related_habit = related_habit
@@ -52,6 +53,7 @@ class FrequencyValidator:
 
 
 class AbsenceValidator:
+    """Проверяет, если привычка имеет признак приятной, у нее не должно быть вознаграджения или связанной привычки"""
 
     def __init__(self, award, related_habit, pleasant_habit):
         self.award = award
