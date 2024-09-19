@@ -5,6 +5,7 @@ from habits.models import Habits
 
 @admin.register(Habits)
 class HabitsAdmin(admin.ModelAdmin):
+    """Класс для работы с админ-панелью модели Привычек."""
     list_display = (
         "id",
         "user",
