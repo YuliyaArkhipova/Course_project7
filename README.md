@@ -1,4 +1,4 @@
-# Курсовой проект по курсу "DRF"
+# Курсовой проект по курсу "DRF" + "Docker"
 ## Трекер полезных привычек
 
 ### Инструкция по запуску
@@ -42,3 +42,9 @@ macOS и Linux: `source venv/bin/activate`
 10. Запустите celery   
 `celery -A config worker -l INFO`   
 `celery -A config beat -l INFO -S django`
+
+
+#### Для запуска проекта через Docker:
+
+ `docker-compose up -d --build`
+
